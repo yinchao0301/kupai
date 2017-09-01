@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>酷派-购物车</title>
+<link rel="shoctcut icon" href="https://res.coolyun.com/pass/img/1.0/coolyun.ico">
+<link rel="stylesheet" href="css/public.css" />
+<link rel="stylesheet" href="css/cart.css" />
+</head>
+<body>
+	<!--	header logo和导航栏-->
+	<div class="header">
+		<div class="header_one" id="header_one">
+			<!--logo-->
+			<div class="header_logo">
+				<a href="index.html" target="_blank"><img src="img/logo.png"/></a>
+			</div>
+			<!--nav-->
+			<div class="header_nav">
+				<ul>
+					<li><a href="moreproduct.html" target="_blank">酷派商城</a></li>
+					<li id="b"><a href="###">Cool系列</a></li>
+					<li><a href="moreproduct.html" target="_blank">全部商品</a></li>
+					<li><a href="friend.html" target="_blank">酷友社区</a></li>
+					<li><a href="###">云服务</a></li>
+					<li><a href="###">以旧换新</a></li>
+					<li class="header_top" id="serch"><a href="###"><img src="img/mag.png"/></a></li>
+					<li class="header_top" id="shoping"><a href="###"><img src="img/car.png"/></a></li>
+					<li class="header_top" id="login"><a href="###"><img src="img/person.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="serchA" id="serchA">
+			<div class="serchA_a">
+				<input type="text" class="serchA_aa" placeholder="搜索商品"/>
+				<div class="sechBtn" id="sechBtn">
+					<p>X</p>
+				</div>
+			</div>
+			<div class="serchA_b">
+				<a href="###">cool S1</a>
+				<a href="###">cool 1C</a>
+				<a href="###">cool1 dual</a>
+			</div>
+		</div>
+	</div>
+
+	<!--cool系列-->
+	<div id="wrap">
+		<div id="box1"><a href="#"><img src="img/12.png"><span>Cool S1</span></a></div>
+		<div id="box2"><a href="#"><img src="img/12.png"><span>Cool S1</span></a></div>
+		<div id="box3"><a href="#"><img src="img/12.png"><span>Cool S1</span></a></div>
+		<div id="box4"><a href="#"><img src="img/12.png"><span>Cool S1</span></a></div>
+	</div>
+	<!--购物车-->
+	<div id="cart">
+		<img src="img/cart_empty@1x.png"/>
+		<p>购物车内未添加商品</p>
+	</div>
+	<div id="goOn">
+		<a href="login.html" target="_blank"><img src="img/fance.png" alt="" /><span style="display: block;margin-left:4px;width:35px;height:35px;float:left;">登录</span></a>
+		<a href="register.html" target="_blank"><img src="img/pill.png" alt="" /><span style="display: block;margin-left:4px;width:35px;height:35px;float:left;">注册</span></a>
+	</div>
+	<!--content-->
+	<div class="content">
+		<div class="content_one">
+			<table id="cartTable">
+    <thead>
+        <tr>
+            <th><label><input class="check-all check" type="checkbox"/>&nbsp;全选</label></th>
+            <th>商品</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>小计</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+            <td class="goods"><img src="img/shoub.png" alt=""/><span>手机游戏手柄</span></td>
+            <td class="price">129.00</td>
+            <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+            <td class="subtotal">129.00</td>
+            <td class="operation"><span class="delete">删除</span></td>
+        </tr>
+        <tr>
+            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+            <td class="goods"><img src="img/N1.png" alt=""/><span>锋尚N1S锐志金</span></td>
+            <td class="price">1299.00</td>
+            <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+            <td class="subtotal">1299.00</td>
+            <td class="operation"><span class="delete">删除</span></td>
+        </tr>
+        <tr>
+            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+            <td class="goods"><img src="img/bao.jpg" alt=""/><span>聚合物移动电源10000毫安</span></td>
+            <td class="price">99.00</td>
+            <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+            <td class="subtotal">99.00</td>
+            <td class="operation"><span class="delete">删除</span></td>
+        </tr>
+        <tr>
+            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+            <td class="goods"><img src="img/le.jpg" alt=""/><span>Cool1 dual乐次元会员版锋芒金</span></td>
+            <td class="price">1499.00</td>
+            <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+            <td class="subtotal">1499.00</td>
+            <td class="operation"><span class="delete">删除</span></td>
+        </tr>
+    </tbody>
+</table>
+<div class="foot" id="foot">
+    <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;全选</label>
+    <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+    <div class="fr closing">结 算</div>
+    <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+    <div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+    <div class="selected-view">
+        <div id="selectedViewList" class="clearfix">
+            <div><img src="img/shoub.png"><span>取消选择</span></div>
+        </div>
+        <span class="arrow">◆<span>◆</span></span>
+    </div>
+</div>
+		</div>
+		
+	</div>
+	
+	<!--footer底部-->
+	<div class="footer">
+		<div class="footer_one">
+			<div class="footer_onea">
+				<ul class="borderD">
+					<li><img src="img/7tui@2x.png"/><span id="">7天退货保障</span></li><li class="borderD-a"></li>
+					<li><img src="img/15huan@2x.png"/><span id="">15天换货保障</span></li><li class="borderD-a"></li>
+					<li><img src="img/sf@2x.png"/><span id="">满100元包邮</span></li><li class="borderD-a"></li>
+					<li><img src="img/zheng@2x.png"/><span id="">835个售后网点</span></li>
+				</ul>
+			</div>
+			<div class="footer_oneb">
+				<div class="footer_oneb-a">
+					<ul>
+						<li>购物指南
+							<ul>
+								<li><a href="###">购物流程</a></li>
+								<li><a href="###">优惠券</a></li>
+								<li><a href="###">常见问题</a></li>
+							</ul>
+						</li>
+						<li>关于支付
+							<ul>
+								<li><a href="###">关于支付</a></li>
+								<li><a href="###">关于发票</a></li>
+							</ul>
+						</li>
+						<li>配送说明
+							<ul>
+								<li><a href="###">配送方式</a></li>
+								<li><a href="###">配送说明</a></li>
+							</ul>
+						</li>
+						<li>售后服务
+							<ul>
+								<li><a href="###">售后政策</a></li>
+								<li><a href="###">线下网点</a></li>
+								<li><a href="###">预约到店</a></li>
+								<li><a href="###">预约上门</a></li>
+								<li><a href="###">寄修服务</a></li>
+								
+							</ul>
+						</li>
+						<li>关注我们
+							<ul>
+								<li><a href="###">客服微博</a></li>
+								<li><a href="###">联系我们</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="telphone">
+					<h2>400-888-1388</h2>
+					<p>周一至周日 8:30-18:30（仅收市话费）</p>
+					<div class="box">
+						<a href="###">在线咨询</a>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer_copyright">
+		<div class="footer_copyright-a">
+			<p>Copyright © 2016, Coolpad Co., Ltd. All Right Reserved. 宇龙计算机通信科技（深圳）有限公司</p>
+		</div>
+		<div class="footer_copyright-b">
+			<div class="footer_copyright-ba">
+			<a href="###">粤ICP备15075056号</a>
+			<a href="###"><img src="img/honesty_sign.png"/></a>
+			</div>
+
+		</div>
+	</div>
+	
+</body>
+</html>
+<script type="text/javascript" src="js/scrollTop.js"></script>
+<script type="text/javascript" src="js/header.js" ></script>
+<script type="text/javascript" src="js/cart.js" ></script>
+<script type="text/javascript">
+
+</script>

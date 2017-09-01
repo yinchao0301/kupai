@@ -1,0 +1,173 @@
+.content_one{
+	width: 100%;
+	height:55px;
+	background: #eeeeee;
+}
+.content_onea{
+	width:1158px;
+	height: 55px;
+	line-height: 55px;
+	margin: 0 auto;
+}
+.content_oneaa{
+	float: left;
+	width:342px;
+	height:55px;
+	line-height: 55px;
+}
+.content_oneaa a{
+	float: left;
+	color: #666;
+	font-size:14px;
+	margin-right:20px ;
+}
+.content_oneaa a:hover{
+	color: #55a0ff;
+}
+.content_oneab{
+	float: right;
+	height:55px;
+}
+.content_oneab a{
+	color: #666;
+	font-size: 14px;
+	margin-left:20px;
+}
+.content_oneab a:hover{
+	color: #55a0ff;
+}
+.content_two{
+	width:100%;
+	height:2145px;
+	background: #eeeeee;
+}
+.content_twoA{
+	width:1158px;
+	height:2145px;
+	background: #eeeeee;
+	margin: 0 auto;
+}
+.content_twoA li{
+	float: left;
+	width: 285px;
+	height:320px;
+	background: white;
+	border-radius: 5px;
+	margin:15px 4px 15px 0px;
+	transition: all 1s ease;
+}
+.content_twoA li .content_twoa{
+	width: 254px;
+	height: 295px;
+	text-align: center;
+	margin:10px auto
+} 
+.content_twoA .content_twoa img{
+	width:180px;
+	height: 180px;
+	margin: 0 37px
+}
+.content_twoA .content_twoa span{
+	display: block;
+}
+.content_twoA .content_twoa .spanone{
+	color: #666;
+	margin:20px 0px
+}
+.content_twoA .content_twoa .spantwo{
+	color: #55a0ff;
+	font-size: 18px
+}
+.content_twoA li:hover{
+	box-shadow: 0px 3px 0 2px gainsboro;
+}
+/*侧边栏*/
+.siderbar{
+	position: fixed;
+	bottom: 120px;
+	right: 0px;
+	width: 40px;
+	height:80px;
+	background: #f6f6f6;
+	border-radius: 5px;
+}
+.siderA{
+	width:40px;;
+	height: 40px;
+	cursor: pointer;
+}
+.siderB{
+	width:40px;
+	height: 40px;
+	cursor: pointer;
+}
+#siderbar_a{
+	width:40px;
+	height: 40px;
+	font-size: 14px;
+	display: none;
+	position: absolute;
+	left: 5px;
+	top:0px;
+	color: #cdcdcd;
+}
+#siderbar_b{
+	width:40px;
+	height: 40px;
+	font-size: 14px;
+	display: none;
+	position: absolute;
+	left: 5px;
+	top:40px;
+	color: #cdcdcd;
+}
+.siderA:hover #siderbar_a{
+	display:block;
+}
+.siderA:hover img{
+	display: none;
+}
+.siderB:hover #siderbar_b{
+	display:block;
+}
+.siderB:hover img{
+	display: none;
+}
+/*底部页面切换*/
+.List{
+	width:100%;
+	height:42px;
+	background: #eeeeee;
+}
+.Listone{
+	width:1158px;
+	height:42px;
+	margin: 0 auto;
+
+}
+#List_t{
+	width:255px;
+	height: 42px;
+	margin: 0 auto;
+	
+}
+.Listone li{
+	width:51px;
+	height:42px;
+	line-height: 42px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+}
+.Listone a{
+	display: block;
+	width:51px;
+	height:42px;
+	color: gray;
+}
+.list_b{
+	width: 100%;
+	height: 40px;
+	background: #eeeeee;
+	
+}

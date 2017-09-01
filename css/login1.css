@@ -1,0 +1,146 @@
+html,body,ul,li,ol,table,tr,td,dl,dt,dd,img,input,p,div,form,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	user-select: none;
+}
+html,body{
+	height:100%;
+	width:100%;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	background: #f5f8ff;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+/*header*/
+.login-top{
+	width: 500px;
+    height: 113px;
+    margin: 90px auto 0;
+}
+.logo{
+	height: 46px;
+    width: 220px;
+    margin: 0 auto;
+    background:url(../img/reglogo.png);
+    z-index: 100;
+
+}
+.login-title{
+	margin:0 auto;
+}
+.login-title span{
+	display: block;
+    width: 500px;
+    height: 1px;
+    background: #dcdee5;
+    text-align: center;
+    margin-top: 27px;
+}
+.login-company{
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #5c5c60;
+    text-align: center;
+    background: #f5f8ff;
+    width: 150px;
+    margin: -13px auto 0;	
+}
+.login-tips{
+	width: 500px;
+    margin-top: 1px;
+    height: 25px;
+    color: red;
+    padding: 0 30px;
+    background: url(../img/sound.png) no-repeat;
+}
+/*主要内容*/
+.content{
+	width: 500px;
+	height:583px;
+    position: relative;
+    background: #FFF;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.content_one{
+    width:500px;
+    height:61px;
+	position: relative;
+}
+.content_onea{
+	width: 250px;
+	height:61px;
+	float:left;
+	position: relative;
+}
+.content_oneb{
+	width: 250px;
+	height:61px;
+	float:left;
+	position: relative;
+}
+#phone{
+	display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    text-align: center;
+    color: #55A0FF;
+    margin: 0 auto;
+}
+#pass{
+	display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    text-align: center;
+    color:#ccccd6;
+    margin: 0 auto;	 
+}
+.content_onea #pass_one{
+	position: absolute;
+	left: 25px;
+	bottom: 0;
+	width:200px;
+	height: 1px;
+	background: #55A0FF;
+}
+.content_oneb #phone_one{
+	position: absolute;
+	left: 25px;
+	bottom: 0;
+	width:200px;
+	height: 1px;
+	background: #55A0FF;
+}
+.content_one .boR{
+	position: absolute;
+    top: 15px;
+    left: 250px;
+    width: 1px;
+    height: 30px;
+    background: #EEEEF3;
+}
+/*底部*/
+.footer{
+	width:565px;
+	height:19px;
+	margin:60px auto;
+}
+.footer p{
+	font-size:14px;
+	color: #666;
+}
