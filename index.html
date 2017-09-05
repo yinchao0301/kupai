@@ -86,7 +86,7 @@
 			<li><a href="###"><img src="img/c3.jpg"/></a></li>
 			</ul>
 		</div>
-		<div class="content_two">
+		<div class="content_two" id="rx">
 			<div class="conLeft">
 				<a href="###"><img src="img/t7.png"/></a>
 				<p>热销手机</p>
@@ -99,40 +99,40 @@
 		<!--热销手机-->
 		<div class="content_three">
 			<ul>
-				<li>
+				<li id="rx1">
 					<div class="content_threeb">
 						<a href="moreproduct.html" target="_blank">
-							<img src="img/1c@2x.png"/>
+							<img src="img/1c@2x.png" id="rximg1"/>
 							<span class="spanC1">Cool S1</span>
 							<span class="spanC2">送价值999元AKG耳机</span>
 							<span class="spanC3">￥2599.00</span>
 						</a>
 					</div>
 				</li>
-				<li>
+				<li id="rx2">
 					<div class="content_threeb">
 						<a href="moreproduct.html" target="_blank">
-							<img src="img/s1@2x.png"/>
+							<img src="img/s1@2x.png" id="rximg2"/>
 							<span class="spanC1">Cool1 dual桀骜银</span>
 							<span class="spanC2">双1300万摄像头</span>
 							<span class="spanC3">￥1099.00</span>
 						</a>
 					</div>
 				</li>
-				<li>
+				<li id="rx3">
 					<div class="content_threeb">
 						<a href="moreproduct.html" target="_blank">
-							<img src="img/cool6.jpg"/>
+							<img src="img/cool6.jpg" id="rximg3"/>
 							<span class="spanC1">锋尚MAX全网通版尊爵金</span>
 							<span class="spanC2">3+16G内存 5.5寸弧面屏</span>
 							<span class="spanC3">￥1099.00</span>
 						</a>
 					</div>
 				</li>
-				<li>
+				<li id="rx4">
 					<div class="content_threeb">
 						<a href="moreproduct.html" target="_blank">
-							<img src="img/dual@2x.png"/>
+							<img src="img/dual@2x.png" id="rximg4"/>
 							<span class="spanC1">锋尚mini智尚白</span>
 							<span class="spanC2">炫耀双镜面</span>
 							<span class="spanC3">￥1199.00</span>
@@ -141,7 +141,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="content_two">
+		<div class="content_two" id="jx">
 			<div class="conLeft">
 				<a href="###"><img src="img/hhh.png"/></a>
 				<p>精选商品</p>
@@ -159,10 +159,10 @@
 						<img src="img/cool c1.jpg"/>
 					</a>
 				</div>
-				<li>
+				<li id="c1">
 					<div class="content_threeb">
 						<a href="moreproduct.html" target="_blank">
-							<img src="img/1.png"/>
+							<img src="img/1.png"/ id="img1">
 							<span class="spanC1">锋尚pro2</span>
 							<span class="spanC2">指纹识别 高通八核处理器</span>
 							<span class="spanC3">￥1599.00</span>
@@ -228,9 +228,9 @@
 				<div class="content_three">
 			<ul>
 				<li>
-					<div class="content_threeb">
+					<div class="content_threeb" id="content_twob">
 						<a href="moreproduct.html" target="_blank">
-							<img src="img/7.png"/>
+							<img src="img/7.png" id="img07"/>
 							<span class="spanC1">Cool 1C TPU保护套</span>
 							<span class="spanC2">贴心保护 优良手感</span>
 							<span class="spanC3">￥19.00</span>
@@ -269,7 +269,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="content_four">
+		<div class="content_four" id="sp">
 			<img src="img/tv.png"/>
 			<p>视频</p>
 		</div>
@@ -409,12 +409,140 @@
 
 		</div>
 	</div>
+	<div class="rightSider">
+		<ul>
+			<li id="rs_one"><a href="###">热销手机</a></li>
+			<li id="rs_two"><a href="###">精选商品</a></li>
+			<li id="rs_three"><a href="###">视频</a></li>
+		</ul>
+	</div>
 </body>
 </html>
 <script src="dist/js/swiper.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/scrollTop.js"></script>
 <script type="text/javascript" src="js/header.js" ></script>
+<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
 <script type="text/javascript">
+	$(function(){
+		$("#rs_one").click(function(){
+			$("body").stop().animate({
+				scrollTop:$("#rx").offset().top
+			},1000);
+		});
+	});
+	$(function(){
+		$("#rs_two").click(function(){
+			$("body").stop().animate({
+				scrollTop:$("#jx").offset().top
+			},1000);
+		});
+	});
+	$(function(){
+		$("#rs_three").click(function(){
+			$("body").stop().animate({
+				scrollTop:$("#sp").offset().top
+			},1000);
+		});
+	});
+	
+	
+	$(function(){
+	$("#content_twob").mouseover(function(){
+		$("#img07").stop().animate({
+			"width":"0px",
+			"left":"100px"
+		},300,function(){
+			//console.log(this);
+			//this.src="img/11.jpg";
+			$(this).stop().animate({
+				"width":"200px",
+				"left":"0px"
+			},300);
+		});
+	});
+});
+
+
+	$(function(){
+	$("#c1").mouseover(function(){
+		$("#img1").stop().animate({
+			"width":"0px",
+			"left":"100px"
+		},300,function(){
+			//console.log(this);
+			//this.src="img/11.jpg";
+			$(this).stop().animate({
+				"width":"200px",
+				"left":"0px"
+			},300);
+		});
+	});
+});
+//
+	$(function(){
+	$("#rx1").mouseover(function(){
+		$("#rximg1").stop().animate({
+			"width":"0px",
+			"left":"100px"
+		},300,function(){
+			//console.log(this);
+			//this.src="img/11.jpg";
+			$(this).stop().animate({
+				"width":"200px",
+				"left":"0px"
+			},300);
+		});
+	});
+});
+//
+	$(function(){
+	$("#rx2").mouseover(function(){
+		$("#rximg2").stop().animate({
+			"width":"0px",
+			"left":"100px"
+		},300,function(){
+			//console.log(this);
+			//this.src="img/11.jpg";
+			$(this).stop().animate({
+				"width":"200px",
+				"left":"0px"
+			},300);
+		});
+	});
+});
+
+//
+	$(function(){
+	$("#rx3").mouseover(function(){
+		$("#rximg3").stop().animate({
+			"width":"0px",
+			"left":"100px"
+		},300,function(){
+			//console.log(this);
+			//this.src="img/11.jpg";
+			$(this).stop().animate({
+				"width":"200px",
+				"left":"0px"
+			},300);
+		});
+	});
+});
+//
+	$(function(){
+	$("#rx4").mouseover(function(){
+		$("#rximg4").stop().animate({
+			"width":"0px",
+			"left":"100px"
+		},300,function(){
+			//console.log(this);
+			//this.src="img/11.jpg";
+			$(this).stop().animate({
+				"width":"200px",
+				"left":"0px"
+			},300);
+		});
+	});
+});
 
 </script>      

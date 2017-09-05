@@ -300,3 +300,27 @@
 .siderB:hover img{
 	display: none;
 }
+.rightSider{
+	width:55px;
+	height:180px;
+	position: fixed;
+	top:650px;
+	left:0;
+	background: #999;	
+	z-index: 100;
+	border-radius: 5px;
+	
+}
+.rightSider li{
+	width:55px;
+	height:55px;
+	line-height: 60px;
+}
+.rightSider a{
+	display: block;
+	width: 55px;
+	height:60px;
+	color: black;
+	font-size: 12px;
+}
+

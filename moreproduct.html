@@ -137,7 +137,7 @@
 			
 		</div>
 	</div>
-	<div class="content_two">
+	<div class="content_two" id="content_two">
 		<div class="content_twoa">
 			<ul>
 				<li>产品详情</li>
@@ -254,9 +254,24 @@
 	</div>
 </body>
 </html>
-<script type="text/javascript" src="js/index.js"></script>
+<!--<script type="text/javascript" src="js/index.js"></script>-->
 <script type="text/javascript" src="js/scrollTop.js"></script>
+<script type="text/javascript" src="js/moreproduct.js" ></script>
 <script type="text/javascript" src="js/header.js" ></script>
+<script type="text/javascript" src="js/sanjiliandong.js" ></script>
 <script type="text/javascript">
+window.onscroll=function(){
+	var content_two=document.getElementById("content_two");
+	var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+	console.log(scrollTop);
+	if(scrollTop>=850){
+		content_two.style.position="fixed";
+		content_two.style.top="0px";
+	}else{
+		content_two.style.position="absolute";
+		content_two.style.top="850px";
+		}
+	
+}
 
 </script>

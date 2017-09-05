@@ -55,6 +55,8 @@
 	border-radius: 5px;
 	margin:15px 4px 15px 0px;
 	transition: all 1s ease;
+	position: relative;
+	overflow: hidden;
 }
 .content_twoA li .content_twoa{
 	width: 254px;
@@ -170,4 +172,52 @@
 	height: 40px;
 	background: #eeeeee;
 	
+}
+.box1{//285 320
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:2px;
+	height:320px;
+	background: black;
+	transition: all 2s;
+}
+li:hover .box1{
+	transform: translateY(-320px);
+}
+.box2{
+	position:absolute;
+	bottom:0px;
+	left:-285px;
+	width: 285px;
+	height:2px;
+	background: black;
+	transition: all 2s;
+}
+li:hover .box2{
+	transform: translateX(285px);
+}
+.box3{
+	position: absolute;
+	top:0px;
+	right:-285px;
+	width:285px;
+	height:2px;
+	background: black;
+	transition: all 2s;
+}
+li:hover .box3{
+	transform: translateX(-285px);
+}
+.box4{
+	position: absolute;
+	top:-320px;
+	right: 0px;
+	width: 2px;
+	height:320px;
+	background: black;
+	transition: all 2s;
+}
+li:hover .box4{
+	transform: translateY(320px);
 }

@@ -1,6 +1,7 @@
-window.onload = function(){
+
     var obtn = document.getElementById('siderB');  //获取回到顶部按钮的ID
     var clientHeight = document.documentElement.clientHeight;   //获取可视区域的高度
+    console.log(clientHeight);
     var timer = null; //定义一个定时器
     var isTop = true; //定义一个布尔值，用于判断是否到达顶部
 
@@ -37,4 +38,3 @@ window.onload = function(){
             }
         },100);
     }
-}

@@ -1,4 +1,4 @@
-function $(id){
+function q$(id){
 	return document.getElementById(id);
 }
 //轮播图
@@ -12,11 +12,11 @@ var mySwiper = new Swiper ('.swiper-container', {
 //视频播放
 for(var i=0;i<btns.length;i++){
 	btns[i].onclick=function(){
-		$("show").style.display="block";
-		$("shadow").style.display="block";
+		q$("show").style.display="block";
+		q$("shadow").style.display="block";
    }
-  	$("shut").onclick=function(){
-  		$("show").style.display="none";
-  		$("shadow").style.display="none";
+  	q$("shut").onclick=function(){
+  		q$("show").style.display="none";
+  		q$("shadow").style.display="none";
 	  }
 }
