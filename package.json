@@ -1,7 +1,22 @@
 {
-  "devDependencies": {
-    "gulp-less": "^3.3.2"
+  "name": "kupai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "name": "",
-  "version": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinchao0301/kupai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yinchao0301/kupai/issues"
+  },
+  "homepage": "https://github.com/yinchao0301/kupai#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }

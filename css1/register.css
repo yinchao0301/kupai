@@ -1,0 +1,148 @@
+@charset "UTF-8";
+html, body, ul, li, ol, table, tr, td, dl, dt, dd, img, input, p, div, form, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  user-select: none; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-family: "微软雅黑",Arial;
+  background: #f5f8ff; }
+
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none; }
+
+.login-top {
+  width: 500px;
+  height: 62px;
+  margin: 90px auto 0; }
+
+.logo {
+  height: 46px;
+  width: 220px;
+  margin: 0 auto;
+  background: url(../img/reglogo.png);
+  z-index: 100; }
+
+.content {
+  width: 500px;
+  height: 672px;
+  position: relative;
+  background: #FFF;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto; }
+
+.content_one {
+  width: 440px;
+  height: 59px;
+  line-height: 59px;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid #eeeef3;
+  margin: 0 auto; }
+
+.content_two {
+  width: 500px;
+  height: 507px;
+  margin-top: 50px; }
+
+.content_twoa {
+  width: 355px;
+  height: 426px;
+  margin: 0 auto;
+  z-index: 100; }
+
+.content_twoa li {
+  width: 355px;
+  height: 46px;
+  margin-bottom: 29px;
+  position: relative; }
+
+.content_twoa input {
+  width: 351px;
+  height: 42px;
+  border: 1px solid #CCCCD6;
+  border-radius: 5px; }
+
+.content_twoa li p {
+  height: 42px;
+  line-height: 42px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #ccccd6; }
+
+.content_twoa li span {
+  display: block;
+  height: 27px;
+  width: 71px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border-radius: 5px; }
+
+.content_twoa li b {
+  font-size: 12px;
+  color: red; }
+
+.content_twoa li a {
+  float: right;
+  height: 42px;
+  line-height: 42px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  color: #55A0FF;
+  font-size: 14px; }
+
+.content_twob {
+  width: 350px;
+  height: 48px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid #CCCCD6;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 48px;
+  background: #55A0FF; }
+
+.content_twob p {
+  color: white; }
+
+.content_twoc {
+  width: 355px;
+  height: 65px;
+  margin: 0 auto; }
+
+.content_twoc a {
+  float: right;
+  margin: 20px 0;
+  color: #666;
+  font-size: 14px; }
+
+.content_twod P {
+  margin: 0 55px;
+  font-size: 12px;
+  color: #999; }
+
+.footer {
+  width: 565px;
+  height: 19px;
+  margin: 60px auto; }
+
+.footer p {
+  font-size: 14px;
+  color: #666; }
+
+/*# sourceMappingURL=register.css.map */
