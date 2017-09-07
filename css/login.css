@@ -100,7 +100,8 @@ img{
     line-height: 60px;
     font-size: 16px;
     text-align: center;
-    color: #55A0FF;
+    /*color: #55A0FF;*/
+   color:#ccccd6;
     margin: 0 auto;
 }
 #pass{

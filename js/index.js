@@ -6,9 +6,11 @@ var mySwiper = new Swiper ('.swiper-container', {
 	loop: true,//是否可以循环拖动
 	autoplay:2000,//是否自动播放
 	pagination: '.swiper-pagination',
+	//paginationClickable :true,
   })   
   	var btns=document.getElementsByClassName("btn");
 //	console.log(btns.length);
+
 //视频播放
 for(var i=0;i<btns.length;i++){
 	btns[i].onclick=function(){

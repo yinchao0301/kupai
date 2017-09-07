@@ -23,51 +23,51 @@ phone.onclick=function(){
 	pass.style.color= "#ccccd6";  
 	phone.style.color= "#55A0FF";
 }
-function $(id){
+function q$(id){
 	return document.getElementById(id);
 }
 //验证邮箱号、手机号
-$("mail").onblur = function(){
-	//console.log($("mail").value)
-	let str = $("mail").value;
-	let reg = /^\w+@\w(\.\w+)+$/;
-	let reg1 = /^1\d{10}$/;
-	//验证邮箱号、手机号的正则
-	if((reg.test(str)) || (reg1.test(str))){
-		//验证用户名是否存在
-		jQuery.ajax({
-			url:"checkUser.php",
-			async:true,
-			data:"username="+$("mail").value,
-			type:"post",
-			success:function(data){
-				//console.log(data+$("mail").value)
-				if(data=="1"){
-					jQuery("#mail1").html("该用户已经被注册了");
-					    
-				}else{
-					jQuery("#mail1").html("该用户没有人使用");
-					//location.href="denglu.html";
-				}
-			}		
-		});	}else{
-			$("mail1").innerHTML = "您好，请检查您的邮箱号或手机号格式是否正确";
-			return;
-	}
-};
-//验证密码
-$("passId").onblur = function(){
-	let str = $("passId").value;
-	let reg = /^[0-9a-zA-Z_]\w{5,11}$/;
-	if(reg.test(str)){
-		
-	}else{
-		$("pass1").innerHTML = "您好，请检查您的密码设置是否符合要求";
-		return;
-	}
-};
-$("imgNum").onclick = function(){//字母、数字组合验证码
-	code($("imgNum"));
+//q$("mail").onblur = function(){
+//	//console.log(q$("mail").value)
+//	let str = q$("mail").value;
+//	let reg = /^\w+@\w(\.\w+)+q$/;
+//	let reg1 = /^1\d{10}q$/;
+//	//验证邮箱号、手机号的正则
+//	if((reg.test(str)) || (reg1.test(str))){
+//		//验证用户名是否存在
+//		jQuery.ajax({
+//			url:"checkUser.php",
+//			async:true,
+//			data:"username="+q$("mail").value,
+//			type:"post",
+//			success:function(data){
+//				//console.log(data+q$("mail").value)
+//				if(data=="1"){
+//					jQuery("#mail1").html("该用户已经被注册了");
+//					    
+//				}else{
+//					jQuery("#mail1").html("该用户没有人使用");
+//					//location.href="denglu.html";
+//				}
+//			}		
+//		});	}else{
+//			q$("mail1").innerHTML = "您好，请检查您的邮箱号或手机号格式是否正确";
+//			return;
+//	}
+//};
+////验证密码
+//q$("passId").onblur = function(){
+//	let str = q$("passId").value;
+//	let reg = /^[0-9a-zA-Z_]\w{5,11}q$/;
+//	if(reg.test(str)){
+//		
+//	}else{
+//		q$("pass1").innerHTML = "您好，请检查您的密码设置是否符合要求";
+//		return;
+//	}
+//};
+q$("imgNum").onclick = function(){//字母、数字组合验证码
+	code(q$("imgNum"));
 };
 
 function code(obj){
@@ -98,63 +98,63 @@ function code(obj){
 	obj.style.color="rgb("+num1+","+num2+","+num3+")";
 	
 }
-$("yan").onblur = function(){
-	var str2 = $("imgNum").innerHTML;
+q$("yan").onblur = function(){
+	var str2 = q$("imgNum").innerHTML;
 	str2 = str2.toLowerCase();
-	var str3 = $("yan").value;
+	var str3 = q$("yan").value;
 	str3 = str3.toLowerCase();
 	if(str3!=str2){
-		$("yan1").innerHTML = "请输入正确的验证码";
+		q$("yan1").innerHTML = "请输入正确的验证码";
 		return;
 	}
 };
 window.onload = function(){
-	code($("imgNum"));
-	code($("yzml"));
+	code(q$("imgNum"));
+	code(q$("yzml"));
 	
 
 }
 
-//验证邮箱号、手机号
-$("userPhone").onblur = function(){
-	//console.log($("mail").value)
-	let str = $("userPhone").value;
-	let reg = /^\w+@\w(\.\w+)+$/;
-	let reg1 = /^1\d{10}$/;
-	//验证邮箱号、手机号的正则
-	if((reg.test(str)) || (reg1.test(str))){
-		//验证用户名是否存在
-		jQuery.ajax({
-			url:"checkUser.php",
-			async:true,
-			data:"username="+$("userPhone").value,
-			type:"post",
-			success:function(data){
-				//console.log(data+$("mail").value)
-				if(data=="1"){
-					jQuery("#mail1").html("该用户已经被注册了");
-					    
-				}else{
-					jQuery("#mail1").html("该用户没有人使用");
-					//location.href="denglu.html";
-				}
-			}		
-		});	}else{
-			$("userPhone1").innerHTML = "您好，请检查您的邮箱号或手机号格式是否正确";
-			return;
-	}
-};
+////验证邮箱号、手机号
+//q$("userPhone").onblur = function(){
+//	//console.log(q$("mail").value)
+//	let str = q$("userPhone").value;
+//	let reg = /^\w+@\w(\.\w+)+q$/;
+//	let reg1 = /^1\d{10}q$/;
+//	//验证邮箱号、手机号的正则
+//	if((reg.test(str)) || (reg1.test(str))){
+//		//验证用户名是否存在
+//		jQuery.ajax({
+//			url:"checkUser.php",
+//			async:true,
+//			data:"username="+q$("userPhone").value,
+//			type:"post",
+//			success:function(data){
+//				//console.log(data+q$("mail").value)
+//				if(data=="1"){
+//					jQuery("#mail1").html("该用户已经被注册了");
+//					    
+//				}else{
+//					jQuery("#mail1").html("该用户没有人使用");
+//					//location.href="denglu.html";
+//				}
+//			}		
+//		});	}else{
+//			q$("userPhone1").innerHTML = "您好，请检查您的邮箱号或手机号格式是否正确";
+//			return;
+//	}
+//};
 
-$("yzml").onclick = function(){//字母、数字组合验证码
-	code($("yzml"));
+q$("yzml").onclick = function(){//字母、数字组合验证码
+	code(q$("yzml"));
 };
-$("yzm").onblur = function(){
-	var str2 = $("yzml").innerHTML;
+q$("yzm").onblur = function(){
+	var str2 = q$("yzml").innerHTML;
 	str2 = str2.toLowerCase();
-	var str3 = $("yzm").value;
+	var str3 = q$("yzm").value;
 	str3 = str3.toLowerCase();
 	if(str3!=str2){
-		$("yzm2").innerHTML = "请输入正确的验证码";
+		q$("yzm2").innerHTML = "请输入正确的验证码";
 		return;
-	}
+  }
 };
