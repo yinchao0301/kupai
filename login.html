@@ -104,7 +104,8 @@ $(function(){
 				},
 				function(str){
 					if(str=="1"){
-						//保存cookie
+					addCookie("userName",tnt,7);
+					addCookie("userPass",con,7);
 						
 						location.href="index.html";
 					}else{
